@@ -35,7 +35,7 @@ public class PlayerListener implements Listener
     {
         if(e.getEntity() instanceof Player)
         {
-            plugin.lastPvp.put((Player)e.getEntity(), Long.valueOf(System.currentTimeMillis()));
+            plugin.lastPvp.put((Player) e.getEntity(), System.currentTimeMillis());
         }
     }
 }
