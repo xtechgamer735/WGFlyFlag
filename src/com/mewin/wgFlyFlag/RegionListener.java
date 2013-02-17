@@ -40,11 +40,8 @@ public class RegionListener
 
     public void onUpdate()
     {
-        Player arr$[] = Bukkit.getOnlinePlayers();
-        int len$ = arr$.length;
-        for(int i$ = 0; i$ < len$; i$++)
+        for(Player player : Bukkit.getOnlinePlayers())
         {
-            Player player = arr$[i$];
             if(!player.hasPermission("flyflag.ignore"))
             {
                 updateFlyFlag(player);
