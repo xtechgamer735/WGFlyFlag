@@ -24,12 +24,13 @@ import com.sk89q.worldguard.protection.flags.StateFlag;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class WGFlyFlagPlugin extends JavaPlugin
 {
     public static final StateFlag FLY_FLAG = new StateFlag("fly", false);
-    public Map lastPvp;
+    public Map<Player, Long> lastPvp;
     public int pvpTimeOut;
     private WorldGuardPlugin wgPlugin;
     private WGCustomFlagsPlugin custPlugin;

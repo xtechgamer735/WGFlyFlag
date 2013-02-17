@@ -61,7 +61,7 @@ public class RegionListener
             RegionManager rm = wgPlugin.getRegionManager(player.getWorld());
             if(plugin.pvpTimeOut > -1 && plugin.lastPvp.containsKey(player))
             {
-                long lastPvp = ((Long)plugin.lastPvp.get(player)).longValue();
+                long lastPvp = plugin.lastPvp.get(player);
                 if(System.currentTimeMillis() - lastPvp < plugin.pvpTimeOut)
                 {
                     allowFlight = false;
