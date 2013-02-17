@@ -70,7 +70,7 @@ public class RegionListener
             } else if(rm != null)
             {
                 ApplicableRegionSet regions = rm.getApplicableRegions(player.getLocation());
-                allowFlight = regions.allows(WGFlyFlagPlugin.FLY_FLAG);
+                allowFlight = regions.allows(WGFlyFlagPlugin.FLY_FLAG, wgPlugin.wrapPlayer(player));
             }
             if(allowFlight != player.getAllowFlight())
             {
