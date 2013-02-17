@@ -1,0 +1,11 @@
+name: WGFlyFlag
+authors: [ mewin ]
+version: 0.2
+main: com.mewin.wgFlyFlag.WGFlyFlagPlugin
+depend: [ WorldGuard, WGCustomFlags ]
+softdepend: [ WorldEdit ]
+
+permissions:
+  flyflag.ignore:
+    description: ignore the fly flag
+    default: false
