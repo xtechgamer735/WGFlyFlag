@@ -74,15 +74,14 @@ public class WGFlyFlagPlugin extends JavaPlugin
 
     private void startUpdate()
     {
-        getServer().getScheduler().scheduleAsyncRepeatingTask(this, new Runnable() {
-
+        getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable()
+        {
             @Override
             public void run()
             {
                 regionListener.onUpdate();
             }
-        }
-        , 100L, 20L);
+        }, 100L, 20L);
     }
 
     private WorldGuardPlugin getWGPlugin()

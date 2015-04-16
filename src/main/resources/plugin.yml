@@ -1,6 +1,6 @@
 name: WGFlyFlag
 authors: [ mewin ]
-version: 0.2
+version: 0.3
 main: com.mewin.wgFlyFlag.WGFlyFlagPlugin
 depend: [ WorldGuard, WGCustomFlags ]
 softdepend: [ WorldEdit ]
