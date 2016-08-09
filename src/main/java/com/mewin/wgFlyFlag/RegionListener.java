@@ -89,7 +89,7 @@ public class RegionListener
                     {
                         player.sendMessage(plugin.getConfig().getString("messages.fly-end", ChatColor.DARK_RED + "Error: message missing!").replaceAll("&", "§"));
                     }
-                    player.setFallDistance(1.0F);
+                    player.setFallDistance(-1);
                     player.setAllowFlight(false);
                 }
             }
