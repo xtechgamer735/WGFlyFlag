@@ -1,3 +1,5 @@
+**Please note this project is no longer updated or supported, and should not be expected to work.**
+
 WGFlyFlag
 =========
 
